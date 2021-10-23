@@ -1,0 +1,12 @@
+frontend
+--------
+users request 20 post's 
+title and description
+to the graphql api
+
+backend
+-------
+graphql api returns creator
+with title and description
+of the posts from the database
+even if we don't want creator

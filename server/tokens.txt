@@ -1,0 +1,29 @@
+Token Based Authentication
+--------------------------
+user submits the form 
+on frontend (browser)
+
+browser call the api
+then api send the 
+credentials to the server
+
+server takes the user
+credentials and check
+if user exists or not
+
+if user exists then
+
+server takes user id
+
+{ userId: 1 }
+
+and generate jwt
+and send jwt
+as the response 
+
+user then send
+request with that 
+token in headers
+
+like this: 
+Bearer <access_token>

@@ -1,0 +1,5 @@
+mutation UpdateUser($username: String!, $bio: String!) {
+  updateUser(username: $username, bio: $bio) {
+    ...RegularUser
+  }
+}

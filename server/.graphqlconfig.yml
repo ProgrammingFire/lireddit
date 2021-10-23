@@ -1,0 +1,10 @@
+schemaPath: schema.graphql
+name: "LiReddit"
+extensions:
+  endpoints:
+    local:
+      url: "http://localhost:4000/graphql"
+      subscription: "ws://localhost:4000"
+    default:
+      url: "http://api.lireddit.com/graphql"
+      subscription: "ws://api.lireddit.com"

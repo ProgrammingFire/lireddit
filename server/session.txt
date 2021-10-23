@@ -1,0 +1,37 @@
+Session Based Authentication
+----------------------------
+user submits the form 
+on frontend (browser)
+
+browser call the api
+then api send the 
+credentials to the server
+
+server takes the user
+credentials and check
+if user exists or not
+
+if user exists then
+
+server stores user id
+
+{ userId: 1 }
+
+in session in memory database
+like redis because of speed
+
+redis storage: 
+userId -> cw83dwiawudwai7dwahd -> Encrypted Version Of User ID
+
+server decrypt redis key/value:
+
+{ session: { userId: 1 } }
+
+server stores decrypt 
+redis key/value to session
+
+then send session id
+as cookie to browser
+
+browser send request
+to api with that cookie

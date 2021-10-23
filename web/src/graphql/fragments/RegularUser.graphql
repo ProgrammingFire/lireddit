@@ -1,0 +1,15 @@
+fragment RegularUser on User {
+  id
+  username
+  email
+  bio
+  posts {
+    id
+    title
+    points
+    description
+    voteStatus
+    createdAt
+    creatorId
+  }
+}
